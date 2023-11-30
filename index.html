@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    
+    <title>Seleção de jogo</title>
+</head>
+<body>
+    <!-- Menu superior -->
+    <div id="hud">
+        <button class="menub" onclick="menu()">Menu</button>
+    </div>
+    <!-- Fim do menu superior -->
+
+    <!-- Seleção de jogo -->
+    <div id="games">
+        <h1 id="gamestxt">Jogos</h1>
+        <button id="probotao" onclick="logic()">Problemas de lógica</button>
+    </div>
+    <!-- Fim da seleção de jogo -->
+
+    <script>
+        let va = true;
+        function menu()
+        {
+            window.location = "index.html"
+        }
+        function logic()
+        {
+
+
+            window.location = "logicmain.html"
+            
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Problema de lógica - Seleção de fases</title>
+</head>
+<body>
+    <!-- Seleção de fase -->
+    <div id="fases">
+        <h1 id="fasestxt">Fases:</h1>
+        <button id="f1" onclick="fase1()">Fase 1</button>
+    </div>
+    <!-- Fim da seleção de fase -->
+
+    <!-- Menu superior -->
+
+    <div id="hud">
+        <button class="menub" onclick="menu()">Menu</button>
+    </div>
+
+    <!-- Fim menu superior-->
+    
+    <script>
+        function menu()
+        {
+            window.location = "index.html"
+        }
+        function fase1()
+        {
+            window.location = "logic1.html"
+        }
+    </script>
+</body>
+</html>

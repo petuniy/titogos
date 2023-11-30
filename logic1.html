@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Fase 1 - Amigos na escola</title>
+</head>
+<body>
+    <!-- Menu -->
+    <div id="hud">
+        <button class="menub" onclick="menu()">Menu</button>
+    </div>
+    <!-- Fim do menu-->
+
+
+    
+    <div id="ult">
+        <p class="a" id="nome">Nome</p>
+        <p class="a" id="mochila">Mochila</p>
+        <p class="a" id="materia">Matéria</p>
+        <p class="a" id="animal">Animal</p>
+        <p class="a" id="lugar">Lugar</p>
+        <p class="a" id="suco">Suco</p>
+    </div>
+
+    <div id="meninos">
+        <p class="b" id="garoto1">Menino 1</p>
+        <p class="b" id="garoto2">Menino 2</p>
+        <p class="b" id="garoto3">Menino 3</p>
+        <p class="b" id="garoto4">Menino 4</p>
+        <p class="b" id="garoto5">Menino 5</p>
+    </div>
+    <!-- Problema de logica-->
+    <form id="problema1">
+        <!-- Menino 1 -->
+        <div id="menino1">
+            <select class="m1" id="nome1">
+                <option value="null" selected></option>
+                <option value="pedro">Pedro</option>
+                <option value="carlos">Carlos</option>
+                <option value="andre">André</option>
+                <option value="felipe">Felipe</option>
+                <option value="gustavo">Gustavo</option>
+            </select>
+            <select class="m1" id="mochila1">
+                <option value="null" selected></option>
+                <option value="amarela">Amarela</option>
+                <option value="azul">Azul</option>
+                <option value="branca">Branca</option>
+                <option value="verde">Verde</option>
+                <option value="vermelha">Vermelha</option>p
+            </select>
+            <select class="m1" id="material1">
+                <option value="null" selected></option>
+                <option value="artes">Artes</option>
+                <option value="biologia">Biologia</option>
+                <option value="historia">História</option>
+                <option value="matematica">Matemática</option>
+                <option value="portugues">Português</option>
+            </select>
+            <select class="m1" id="animal1">
+                <option value="null" selected></option>
+                <option value="cachorro">Cachorro</option>
+                <option value="cavalo">Cavalo</option>
+                <option value="gato">Gato</option>
+                <option value="hamster">Hamster</option>
+                <option value="passaro">Pássaro</option>
+            </select>
+            <select class="m1" id="lugar1">
+                <option value="null" selected></option>
+                <option value="flora">Florianópolis</option>
+                <option value="manaus">Manaus</option>
+                <option value="recife">Recife</option>
+                <option value="rj">Rio de Janeiro</option>
+                <option value="salvador">Salvador</option>
+            </select>
+            <select class="m1" id="suco1">
+                <option value="null" selected></option>
+                <option value="abacaxi">Abacaxi</option>
+                <option value="laranja">Laranja</option>
+                <option value="limao">Limão</option>   
+                <option value="maracuja">Maracujá</option>
+                <option value="morango">Morango</option>
+            </select>
+        </div>
+
+        <!-- Menino 2 -->
+        <div id="menino2">
+            <select class="m2" id="nome2">
+                <option value="null" selected></option>
+                <option value="pedro">Pedro</option>
+                <option value="carlos">Carlos</option>
+                <option value="andre">André</option>
+                <option value="felipe">Felipe</option>
+                <option value="gustavo">Gustavo</option>
+            </select>
+            <select class="m2" id="mochila2">
+                <option value="null" selected></option>
+                <option value="amarela">Amarela</option>
+                <option value="azul">Azul</option>
+                <option value="branca">Branca</option>
+                <option value="verde">Verde</option>
+                <option value="vermelha">Vermelha</option>p
+            </select>
+            <select class="m2" id="material2">
+                <option value="null" selected></option>
+                <option value="artes">Artes</option>
+                <option value="biologia">Biologia</option>
+                <option value="historia">História</option>
+                <option value="matematica">Matemática</option>
+                <option value="portugues">Português</option>
+            </select>
+            <select class="m2" id="animal2">
+                <option value="null" selected></option>
+                <option value="cachorro">Cachorro</option>
+                <option value="cavalo">Cavalo</option>
+                <option value="gato">Gato</option>
+                <option value="hamster">Hamster</option>
+                <option value="passaro">Pássaro</option>
+            </select>
+            <select class="m2" id="lugar2">
+                <option value="null" selected></option>
+                <option value="flora">Florianópolis</option>
+                <option value="manaus">Manaus</option>
+                <option value="recife">Recife</option>
+                <option value="rj">Rio de Janeiro</option>
+                <option value="salvador">Salvador</option>
+            </select>
+            <select class="m2" id="suco2">
+                <option value="null" selected></option>
+                <option value="abacaxi">Abacaxi</option>
+                <option value="laranja">Laranja</option>
+                <option value="limao">Limão</option>   
+                <option value="maracuja">Maracujá</option>
+                <option value="morango">Morango</option>
+            </select>
+        </div>
+
+        <!-- Menino 3 -->
+        <div id="menino3">
+            <select class="m3" id="nome3">
+                <option value="null" selected></option>
+                <option value="pedro">Pedro</option>
+                <option value="carlos">Carlos</option>
+                <option value="andre">André</option>
+                <option value="felipe">Felipe</option>
+                <option value="gustavo">Gustavo</option>
+            </select>
+            <select class="m3" id="mochila3">
+                <option value="null" selected></option>
+                <option value="amarela">Amarela</option>
+                <option value="azul">Azul</option>
+                <option value="branca">Branca</option>
+                <option value="verde">Verde</option>
+                <option value="vermelha">Vermelha</option>p
+            </select>
+            <select class="m3" id="material3">
+                <option value="null" selected></option>
+                <option value="artes">Artes</option>
+                <option value="biologia">Biologia</option>
+                <option value="historia">História</option>
+                <option value="matematica">Matemática</option>
+                <option value="portugues">Português</option>
+            </select>
+            <select class="m3" id="animal3">
+                <option value="null" selected></option>
+                <option value="cachorro">Cachorro</option>
+                <option value="cavalo">Cavalo</option>
+                <option value="gato">Gato</option>
+                <option value="hamster">Hamster</option>
+                <option value="passaro">Pássaro</option>
+            </select>
+            <select class="m3" id="lugar3">
+                <option value="null" selected></option>
+                <option value="flora">Florianópolis</option>
+                <option value="manaus">Manaus</option>
+                <option value="recife">Recife</option>
+                <option value="rj">Rio de Janeiro</option>
+                <option value="salvador">Salvador</option>
+            </select>
+            <select class="m3" id="suco3">
+                <option value="null" selected></option>
+                <option value="abacaxi">Abacaxi</option>
+                <option value="laranja">Laranja</option>
+                <option value="limao">Limão</option>   
+                <option value="maracuja">Maracujá</option>
+                <option value="morango">Morango</option>
+            </select>
+        </div>
+
+        <!-- Menino 4 -->
+        <div id="menino4">
+            <select class="m4" id="nome4">
+                <option value="null" selected></option>
+                <option value="pedro">Pedro</option>
+                <option value="carlos">Carlos</option>
+                <option value="andre">André</option>
+                <option value="felipe">Felipe</option>
+                <option value="gustavo">Gustavo</option>
+            </select>
+            <select class="m4" id="mochila4">
+                <option value="null" selected></option>
+                <option value="amarela">Amarela</option>
+                <option value="azul">Azul</option>
+                <option value="branca">Branca</option>
+                <option value="verde">Verde</option>
+                <option value="vermelha">Vermelha</option>p
+            </select>
+            <select class="m4" id="material4">
+                <option value="null" selected></option>
+                <option value="artes">Artes</option>
+                <option value="biologia">Biologia</option>
+                <option value="historia">História</option>
+                <option value="matematica">Matemática</option>
+                <option value="portugues">Português</option>
+            </select>
+            <select class="m4" id="animal4">
+                <option value="null" selected></option>
+                <option value="cachorro">Cachorro</option>
+                <option value="cavalo">Cavalo</option>
+                <option value="gato">Gato</option>
+                <option value="hamster">Hamster</option>
+                <option value="passaro">Pássaro</option>
+            </select>
+            <select class="m4" id="lugar4">
+                <option value="null" selected></option>
+                <option value="flora">Florianópolis</option>
+                <option value="manaus">Manaus</option>
+                <option value="recife">Recife</option>
+                <option value="rj">Rio de Janeiro</option>
+                <option value="salvador">Salvador</option>
+            </select>
+            <select class="m4" id="suco4">
+                <option value="null" selected></option>
+                <option value="abacaxi">Abacaxi</option>
+                <option value="laranja">Laranja</option>
+                <option value="limao">Limão</option>   
+                <option value="maracuja">Maracujá</option>
+                <option value="morango">Morango</option>
+            </select>
+        </div>
+
+        <!-- Menino 5 -->
+        <div id="menino5">
+            <select class="m5" id="nome5">
+                <option value="null" selected></option>
+                <option value="pedro">Pedro</option>
+                <option value="carlos">Carlos</option>
+                <option value="andre">André</option>
+                <option value="felipe">Felipe</option>
+                <option value="gustavo">Gustavo</option>
+            </select>
+            <select class="m5" id="mochila5">
+                <option value="null" selected></option>
+                <option value="amarela">Amarela</option>
+                <option value="azul">Azul</option>
+                <option value="branca">Branca</option>
+                <option value="verde">Verde</option>
+                <option value="vermelha">Vermelha</option>p
+            </select>
+            <select class="m5" id="material5">
+                <option value="null" selected></option>
+                <option value="artes">Artes</option>
+                <option value="biologia">Biologia</option>
+                <option value="historia">História</option>
+                <option value="matematica">Matemática</option>
+                <option value="portugues">Português</option>
+            </select>
+            <select class="m5" id="animal5">
+                <option value="null" selected></option>
+                <option value="cachorro">Cachorro</option>
+                <option value="cavalo">Cavalo</option>
+                <option value="gato">Gato</option>
+                <option value="hamster">Hamster</option>
+                <option value="passaro">Pássaro</option>
+            </select>
+            <select class="m5" id="lugar5">
+                <option value="null" selected></option>
+                <option value="flora">Florianópolis</option>
+                <option value="manaus">Manaus</option>
+                <option value="recife">Recife</option>
+                <option value="rj">Rio de Janeiro</option>
+                <option value="salvador">Salvador</option>
+            </select>
+            <select class="m5" id="suco5">
+                <option value="null" selected></option>
+                <option value="abacaxi">Abacaxi</option>
+                <option value="laranja">Laranja</option>
+                <option value="limao">Limão</option>   
+                <option value="maracuja">Maracujá</option>
+                <option value="morango">Morango</option>
+            </select>
+        </div>
+    </form>
+
+    <div id="dicasbase">
+        <div class="c" id="blocoA">
+            <p></p>
+            <input type="checkbox" id="cb1l1" class="cbs" onclick="ckbconferir1()">
+            <label id="p1l1" class="txts">O menino que gosta de suco de Laranja está em um dos cantos.<br></label>
+            <p></p>
+            <input type="checkbox" id="cb1l2" class="cbs" onclick="ckbconferir1()">
+            <label id="p1l2" class="txts">Quem gosta de suco de Maracujá está sentado em algum lugar entre quem gosta de cavalos e quem gosta de suco de Morango, nessa ordem.<br></label>
+            <p></p>
+            <input type="checkbox" id="cb1l3" class="cbs" onclick="ckbconferir1()">
+            <label id="p1l3" class="txts">O menino que gosta de suco de Limão está sentado ao lado do que tem a mochila Vermelha. <br></label>
+            <p></p>
+            <input type="checkbox" id="cb1l4" class="cbs" onclick="ckbconferir1()">
+            <label id="p1l4" class="txts">O André está sentado ao lado de quem gosta de suco de Laranja. <br></label>
+            <p></p>
+            <input type="checkbox" id="cb1l5" class="cbs" onclick="ckbconferir1()">
+            <label id="p1l5" class="txts">Quem gosta de Hamsters vai para o Rio de Janeiro. <br></label>
+            <p></p>
+            <input type="checkbox" id="cb1l6" class="cbs" onclick="ckbconferir1()">
+            <label id="p1l6" class="txts">O Pedro está sentado exatamente à esquerda de quem viajará para Manaus. <br></label>
+            <p></p>
+            <input type="checkbox" id="cb1l7" class="cbs" onclick="ckbconferir1()">
+            <label id="p1l7" class="txts">Quem vai para Florianópolis está sentado em algum lugar à direita do Pedro. <br></label>
+            <p></p>
+            <input type="checkbox" id="cb1l8" class="cbs" onclick="ckbconferir1()">
+            <label id="p1l8" class="txts">Quem vai viajará para o Recife está sentado em um dos cantos.<br></label>
+            <p></p>
+            <input type="checkbox" id="cb1l9" class="cbs" onclick="ckbconferir1()">
+            <label id="p1l9" class="txts">O menino que gosta de Biologia vai viajar para o Rio de Janeiro.<br></label>
+            <p></p>
+            <input type="checkbox" id="cb1l10" class="cbs" onclick="ckbconferir1()">
+            <label id="p1l10" class="txts">Ao lado de quem gosta de Gatos está sentado o menino com a mochila Branca.<br></label>
+            <p></p>
+            <input type="checkbox" id="cb1l11" class="cbs" onclick="ckbconferir1()">
+            <label id="p1l11" class="txts">O menino que gosta de pássaros está sentado em uma das pontas.<br></label>
+            <p></p>
+            <input type="checkbox" id="cb1l12" class="cbs" onclick="ckbconferir1()">
+            <label id="p1l12" class="txts">Quem gosta de Hamsters está sentado ao lado de quem gosta de Cachorros. <br></label>
+        </div>
+        <div class="c" id="blocoB">
+            <p></p>
+            <input type="checkbox" id="cb2l1" class="cbs" onclick="ckbconferir2()">
+            <label id="p2l1" class="txts">Ao lado de quem tem a mochila Branca está o menino que gosta de Pássaros. <br></label>
+            <p></p>
+            <input type="checkbox" id="cb2l2" class="cbs" onclick="ckbconferir2()">
+            <label id="p2l2" class="txts">Quem gosta de Cachorros está sentado na extrema direita. <br></label>
+            <p></p>
+            <input type="checkbox" id="cb2l3" class="cbs" onclick="ckbconferir2()">
+            <label id="p2l3" class="txts">O menino que adora Matemática está sentado ao lado de quem gosta de Cavalos. <br></label>
+            <p></p>
+            <input type="checkbox" id="cb2l4" class="cbs" onclick="ckbconferir2()">
+            <label id="p2l4" class="txts">Quem usa a mochila Verde adora estudar História.<br></label>
+            <p></p>
+            <input type="checkbox" id="cb2l5" class="cbs" onclick="ckbconferir2()">
+            <label id="p2l5" class="txts">O Pedro adora estudar Português. <br></label>
+            <p></p>
+            <input type="checkbox" id="cb2l6" class="cbs" onclick="ckbconferir2()">
+            <label id="p2l6" class="txts">Quem gosta de Matemática está sentado exatamente à esquerda de quem gosta de Hamsters. <br></label>
+            <p></p>
+            <input type="checkbox" id="cb2l7" class="cbs" onclick="ckbconferir2()">
+            <label id="p2l7" class="txts">O menino da mochila Vermelha está sentado exatamente à esquerda de quem gosta de Biologia. <br></label>
+            <p></p>
+            <input type="checkbox" id="cb2l8" class="cbs" onclick="ckbconferir2()">
+            <label id="p2l8" class="txts">O menino da mochila Azul gosta de estudar Biologia. <br></label>
+            <p></p>
+            <input type="checkbox" id="cb2l9" class="cbs" onclick="ckbconferir2()">
+            <label id="p2l9" class="txts">O Pedro está sentado em algum lugar entre quem vai para o Recife e quem tem a mochila Verde, nessa ordem. <br></label>
+            <p></p>
+            <input type="checkbox" id="cb2l10" class="cbs" onclick="ckbconferir2()">
+            <label id="p2l10" class="txts">O Carlos está sentado no meio. <br></label>
+            <p></p>
+            <input type="checkbox" id="cb2l11" class="cbs" onclick="ckbconferir2()">
+            <label id="p2l11" class="txts">O Gustavo está sentado na primeira cadeira.<br></label>
+
+        </div>
+    </div>
+
+
+    <div id="msubmit">
+        <button id="submit">Enviar</button>
+    </div>
+    
+
+    <script>
+        let n1 = document.getElementById('nome1')
+        let n2 = document.getElementById('nome2')
+        let n3 = document.getElementById('nome3')
+        let n4 = document.getElementById('nome4')
+        let n5 = document.getElementById('nome5')
+
+        let moc1 = document.getElementById('mochila1')
+        let moc2 = document.getElementById('mochila2') 
+        let moc3 = document.getElementById('mochila3') 
+        let moc4 = document.getElementById('mochila4') 
+        let moc5 = document.getElementById('mochila5')
+
+        let mat1 = document.getElementById('material1') 
+        let mat2 = document.getElementById('material2') 
+        let mat3 = document.getElementById('material3') 
+        let mat4 = document.getElementById('material4') 
+        let mat5 = document.getElementById('material5') 
+
+        let ani1 = document.getElementById('animal1')
+        let ani2 = document.getElementById('animal2')
+        let ani3 = document.getElementById('animal3')
+        let ani4 = document.getElementById('animal4')
+        let ani5 = document.getElementById('animal5')
+
+        let lug1 = document.getElementById('lugar1')
+        let lug2 = document.getElementById('lugar2')
+        let lug3 = document.getElementById('lugar3')
+        let lug4 = document.getElementById('lugar4')
+        let lug5 = document.getElementById('lugar5')
+
+        let suc1 = document.getElementById('suco1')
+        let suc2 = document.getElementById('suco2')
+        let suc3 = document.getElementById('suco3')
+        let suc4 = document.getElementById('suco4')
+        let suc5 = document.getElementById('suco5')
+
+
+        let btn = document.getElementById('submit')
+
+        let vc1l1 = document.getElementById('cb1l1')
+        let vc1l2 = document.getElementById('cb1l2')
+        let vc1l3 = document.getElementById('cb1l3')
+        let vc1l4 = document.getElementById('cb1l4')
+        let vc1l5 = document.getElementById('cb1l5')
+        let vc1l6 = document.getElementById('cb1l6')
+        let vc1l7 = document.getElementById('cb1l7')
+        let vc1l8 = document.getElementById('cb1l8')
+        let vc1l9 = document.getElementById('cb1l9')
+        let vc1l10 = document.getElementById('cb1l10')
+        let vc1l11 = document.getElementById('cb1l11')
+        let vc1l12 = document.getElementById('cb1l12')
+
+        let vc2l1 = document.getElementById('cb2l1')
+        let vc2l2 = document.getElementById('cb2l2')
+        let vc2l3 = document.getElementById('cb2l3')
+        let vc2l4 = document.getElementById('cb2l4')
+        let vc2l5 = document.getElementById('cb2l5')
+        let vc2l6 = document.getElementById('cb2l6')
+        let vc2l7 = document.getElementById('cb2l7')
+        let vc2l8 = document.getElementById('cb2l8')
+        let vc2l9 = document.getElementById('cb2l9')
+        let vc2l10 = document.getElementById('cb2l10')
+        let vc2l11 = document.getElementById('cb2l11')
+
+        function ckbconferir1()
+        {
+            if(vc1l1.checked == true)
+                document.getElementById('p1l1').style.textDecoration = "line-through"
+            else
+                document.getElementById('p1l1').style.textDecoration = "initial"
+            if(vc1l2.checked == true)
+                document.getElementById('p1l2').style.textDecoration = "line-through"
+            else
+                document.getElementById('p1l2').style.textDecoration = "initial"
+            if(vc1l3.checked == true)
+                document.getElementById('p1l3').style.textDecoration = "line-through"
+            else
+                document.getElementById('p1l3').style.textDecoration = "initial"
+            if(vc1l4.checked == true)
+                document.getElementById('p1l4').style.textDecoration = "line-through"
+            else
+                document.getElementById('p1l4').style.textDecoration = "initial"
+            if(vc1l5.checked == true)
+                document.getElementById('p1l5').style.textDecoration = "line-through"
+            else
+                document.getElementById('p1l5').style.textDecoration = "initial"
+            if(vc1l6.checked == true)
+                document.getElementById('p1l6').style.textDecoration = "line-through"
+            else
+                document.getElementById('p1l6').style.textDecoration = "initial"
+            if(vc1l7.checked == true)
+                document.getElementById('p1l7').style.textDecoration = "line-through"
+            else
+                document.getElementById('p1l7').style.textDecoration = "initial"
+            if(vc1l8.checked == true)
+                document.getElementById('p1l8').style.textDecoration = "line-through"
+            else
+                document.getElementById('p1l8').style.textDecoration = "initial"
+            if(vc1l9.checked == true)
+                document.getElementById('p1l9').style.textDecoration = "line-through"
+            else
+                document.getElementById('p1l9').style.textDecoration = "initial"
+            if(vc1l10.checked == true)
+                document.getElementById('p1l10').style.textDecoration = "line-through"
+            else
+                document.getElementById('p1l10').style.textDecoration = "initial"
+            if(vc1l11.checked == true)
+                document.getElementById('p1l11').style.textDecoration = "line-through"
+            else
+                document.getElementById('p1l11').style.textDecoration = "initial"
+            if(vc1l12.checked == true)
+                document.getElementById('p1l12').style.textDecoration = "line-through"
+            else
+                document.getElementById('p1l12').style.textDecoration = "initial"
+        }
+        
+        function ckbconferir2()
+        {
+            if(vc2l1.checked == true)
+                document.getElementById('p2l1').style.textDecoration = "line-through"
+            else
+                document.getElementById('p2l1').style.textDecoration = "initial"
+            
+            if(vc2l2.checked == true)
+                document.getElementById('p2l2').style.textDecoration = "line-through"
+            else
+                document.getElementById('p2l2').style.textDecoration = "initial"
+
+            if(vc2l3.checked == true)
+                document.getElementById('p2l3').style.textDecoration = "line-through"
+            else
+                document.getElementById('p2l3').style.textDecoration = "initial"
+
+            if(vc2l4.checked == true)
+                document.getElementById('p2l4').style.textDecoration = "line-through"
+            else
+                document.getElementById('p2l4').style.textDecoration = "initial"
+
+            if(vc2l5.checked == true)
+                document.getElementById('p2l5').style.textDecoration = "line-through"
+            else
+                document.getElementById('p2l5').style.textDecoration = "initial"
+
+            if(vc2l6.checked == true)
+                document.getElementById('p2l6').style.textDecoration = "line-through"
+            else
+                document.getElementById('p2l6').style.textDecoration = "initial"
+
+            if(vc2l7.checked == true)
+                document.getElementById('p2l7').style.textDecoration = "line-through"
+            else
+                document.getElementById('p2l7').style.textDecoration = "initial"
+
+            if(vc2l8.checked == true)
+                document.getElementById('p2l8').style.textDecoration = "line-through"
+            else
+                document.getElementById('p2l8').style.textDecoration = "initial"
+
+            if(vc2l9.checked == true)
+                document.getElementById('p2l9').style.textDecoration = "line-through"
+            else
+                document.getElementById('p2l9').style.textDecoration = "initial"
+
+            if(vc2l10.checked == true)
+                document.getElementById('p2l10').style.textDecoration = "line-through"
+            else
+                document.getElementById('p2l10').style.textDecoration = "initial"
+
+            if(vc2l11.checked == true)
+                document.getElementById('p2l11').style.textDecoration = "line-through"
+            else
+                document.getElementById('p2l11').style.textDecoration = "initial"
+        }
+
+        
+        
+        btn.onclick = (event) => {
+
+            conferir()
+        }
+
+        function conferir()
+        {
+            let certo
+            if(n1.value == 'gustavo' && n2.value == 'pedro' && n3.value == 'carlos' && n4.value == 'andre' && n5.value == 'felipe' && moc1.value == 'amarela' && moc2.value == 'branca' && moc3.value == 'vermelha' && moc4.value == 'azul' && moc5.value == 'verde' && mat1.value == 'artes' && mat2.value == 'portugues' && mat3.value == 'matematica' && mat4.value == 'biologia' && mat5.value == 'historia'&& ani1.value == 'passaro' && ani2.value == 'cavalo' && ani3.value == 'gato' && ani4.value == 'hamster' && ani5.value == 'cachorro' && lug1.value == 'recife' && lug2.value == 'salvador' && lug3.value == 'manaus' && lug4.value == 'rj' && lug5.value == 'flora' && suc1.value == 'abacaxi' && suc2.value == 'limao' && suc3.value == 'maracuja' && suc4.value == 'morango' && suc5.value == 'laranja')
+            {
+                alert("Certo\nParabéns!!!!")
+                window.location = "https://plz.life/OCN74Z"
+            }
+            else
+            {
+                alert("Errado") 
+            }
+        }
+
+        function menu()
+        {
+            window.location = "index.html"
+        }
+    </script>
+</body>
+</html>

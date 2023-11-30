@@ -1,0 +1,558 @@
+:root
+{
+    --esq: 20px;
+    --lar: 50%;
+    --mfont: 'Trebuchet MS';
+}
+
+/*  Meu body  */
+body
+{
+    background-color: rgb(206, 205, 205);
+}
+
+
+
+
+
+
+
+
+/* meu menu */
+#hud
+    {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 80px;
+    background-color: rgb(118, 118, 118);
+    z-index: 1;
+}
+.menub
+{
+    height: 100%;
+    width: 200px;
+    background-color: rgb(118, 118, 118);
+    transition: 0.5s;
+    border: hidden;
+    border-radius: 30px;
+    font-size: 150%;
+    z-index: 1;
+    font-family:var(--mfont);
+}
+.menub:hover
+{
+    background-color: rgb(92, 92, 92);
+}
+.menub:active
+{
+    background-color: rgb(60, 60, 60);
+}
+
+/*  Fim do menu */
+
+
+
+
+
+/* Seleção de jogos no index */
+#games 
+{
+    position: relative;
+    margin-top: 150px;
+    text-align: center;
+    font-family:var(--mfont);
+}
+#gamestxt
+{
+    font-size: 300%;
+}
+
+#probotao
+{
+    position: relative;
+    background-color: rgb(168, 167, 167);
+    border-radius: 10px;
+    border-style: double;
+    border-width: 1px;
+    height: 75px;
+    font-size: large;
+    transition: 100ms;
+}
+#probotao:hover
+{
+    background-color: rgb(137, 137, 137);
+}
+#probotao:active
+{
+    background-color: rgb(120, 120, 120);
+}
+/* Fim da seleção de jogos  */
+
+
+
+
+
+
+/* Seleçao de fases do problema de lógica */
+#fases
+{
+    position: relative;
+    top: 100px;
+    height: 400px;
+    width: 25%;
+}
+#f1
+{
+    position: absolute;
+    left: 25%;
+    height: 15%;
+    width: 30%;
+    font-size: 150%;
+    background-color: rgb(189, 189, 189);
+    border-radius: 30%;
+    border-style:solid ;
+    border-width: 1px;
+    transition: 170ms;
+    font-family:var(--mfont);
+}
+#f1:hover
+{
+    background-color: rgb(148, 148, 148);
+}
+#f1:active
+{
+    background-color: rgb(122, 122, 122);
+}
+#fasestxt
+{
+    font-size: 300%;
+    position: relative;
+    left: 10%;
+    font-family:var(--mfont);
+}
+
+/* Fim da seleção de fases */
+
+
+
+
+
+
+
+
+/* Base da fase 1 */
+
+#problema1
+{
+    position: absolute;
+    top: 15%;
+    left: 25%;
+    width: 50%;
+    height: 50%;
+    background-color: rgb(184, 183, 183);
+    
+}
+
+/* Fim da base da fase 1 */
+
+
+
+/* Botao de enviar */
+#submit
+{
+    background-color: rgb(0, 119, 255);
+    position: absolute;
+    border-radius: 15px;
+    width: 100px;
+    height: 40px;
+    left: 48%;
+    top: 66.5%;
+    border-style:groove;
+    border-width: 1px;
+    transition: 150ms;
+    font-family:var(--mfont);
+}
+#submit:hover
+{
+    background-color: rgb(0, 81, 255);
+}
+#submit:active
+{
+    background-color: rgb(1, 68, 214);
+}
+/* Fim do botao de enviar*/
+
+
+/* Nome dos utilitarios */
+
+#ult
+{
+    position: absolute;
+    top: 15%;
+    left: 15%;
+    width: 10%;
+    height: 50%;
+    font-family:var(--mfont);
+}
+.a
+{
+    font-size: 150%;
+}
+#nome
+{
+    position: absolute; top: 0%; left: 45%;
+}
+#mochila
+{
+    position: absolute; top: 17%; left: 45%;
+}
+#materia
+{
+    position: absolute; top: 33%; left: 45%;
+}
+#animal
+{
+    position: absolute; top: 50%; left: 45%;
+}
+#lugar
+{
+    position: absolute; top: 67%; left: 45%;
+}
+#suco
+{
+    position: absolute; top: 83%; left: 45%;
+}
+
+
+
+/* Fim do nome dos utilitarios */
+
+/* Nomes */
+#meninos
+{
+    position: absolute;
+    top: 10%;
+    left: 25%;
+    width: 50%;
+    height: 50px;
+    font-family:var(--mfont);
+}
+.b
+{
+    font-size: 150%;
+}
+#garoto1
+{
+    position: absolute;
+    top: -10px;
+    left: 5%;
+}
+#garoto2
+{
+    position: absolute;
+    top: -10px;
+    left: 24%;
+}
+#garoto3
+{
+    position: absolute;
+    top: -10px;
+    left: 44.5%;
+}
+#garoto4
+{
+    position: absolute;
+    top: -10px;
+    left: 65%;
+}
+#garoto5
+{
+    position: absolute;
+    top: -10px;
+    left: 85%;
+}
+
+
+
+
+
+/* Dicas da fase 1*/
+#dicasbase
+{
+    position: absolute;
+    top: 70%;
+    width: 99.5%;
+    font-family:var(--mfont);
+}
+#blocoA
+{
+    position: absolute;
+    left: 17%;
+    width: 33%;
+}
+#blocoB
+{
+    position: absolute;
+    left: 51%;
+    width: 33%;
+}
+.c
+{
+    font-size: large;
+}
+.cbs
+{
+    background-color: rgb(218, 213, 213);
+    appearance: none;
+    border: 1px solid #000000;
+    border-radius: 20%;
+    width: 15px;
+    height: 15px;
+    cursor:pointer;
+    transition: 400ms;
+}
+.cbs:hover
+{
+    background-color: #EEE9E9
+}
+.cbs:checked
+{
+    background-color: #FFA54F
+}
+.cbs:checked:hover
+{
+    background-color: #FFF68F
+}
+.cbs:active
+{
+    background-color: rgb(201, 37, 37);
+}
+
+.txts
+{
+    position: relative; top: -4px;
+}
+
+/* Fim das dicas da fase 1*/
+
+
+
+
+
+
+/* Posicionamento do menino 1*/
+#menino1
+{
+    position: absolute;
+    height: 100%;
+    width: 20%;
+}
+#nome1
+{
+    position: absolute; top: 3%; left: var(--esq);
+}
+#mochila1
+{
+    position: absolute; top: 20%; left: var(--esq);
+}
+#material1
+{
+    position: absolute; top: 36%; left: var(--esq);
+}
+#animal1
+{
+    position: absolute; top: 53%; left: var(--esq);
+}
+#lugar1
+{
+    position: absolute; top: 70%; left: var(--esq);
+}
+#suco1
+{
+    position: absolute; top: 86%; left: var(--esq);
+}
+.m1
+{
+    text-align: center;
+    font-size: 100%;
+    height: 10%;
+    width: 75%;
+    border-radius: 10px;
+}
+/* Fim do posicionamento do menino 1 */
+
+
+/* Posicionamento do menino 2 */
+#menino2
+{
+    position: absolute;
+    height: 100%;
+    width: 20%;
+    left: 20%;
+}
+#nome2
+{
+    position: absolute; top: 3%; left: var(--esq);
+}
+#mochila2
+{
+    position: absolute; top: 20%; left: var(--esq);
+}
+#material2
+{
+    position: absolute; top: 36%; left: var(--esq);
+}
+#animal2
+{
+    position: absolute; top: 53%; left: var(--esq);
+}
+#lugar2
+{
+    position: absolute; top: 70%; left: var(--esq);
+}
+#suco2
+{
+    position: absolute; top: 86%; left: var(--esq);
+}
+.m2
+{
+    text-align: center;
+    font-size: 100%;
+    height: 10%;
+    width: 75%;
+    border-radius: 10px;
+}
+/* Fim do posicionamento do menino 2 */
+
+
+/* Posicionamento do menino 3 */
+#menino3
+{
+    position: absolute;
+    height: 100%;
+    width: 20%;
+    left: 40%;
+}
+#nome3
+{
+    position: absolute; top: 3%; left: var(--esq);
+}
+#mochila3
+{
+    position: absolute; top: 20%; left: var(--esq);
+}
+#material3
+{
+    position: absolute; top: 36%; left: var(--esq);
+}
+#animal3
+{
+    position: absolute; top: 53%; left: var(--esq);
+}
+#lugar3
+{
+    position: absolute; top: 70%; left: var(--esq);
+}
+#suco3
+{
+    position: absolute; top: 86%; left: var(--esq);
+}
+.m3
+{
+    text-align: center;
+    font-size: 100%;
+    height: 10%;
+    width: 75%;
+    border-radius: 10px;
+}
+/* Fim do posicionamento do menino 3 */
+
+
+
+/* Posinamento do menino 4 */
+#menino4
+{
+    position: absolute;
+    height: 100%;
+    width: 20%;
+    left: 60%;
+}
+#nome4
+{
+    position: absolute; top: 3%; left: var(--esq);
+}
+#mochila4
+{
+    position: absolute; top: 20%; left: var(--esq);
+}
+#material4
+{
+    position: absolute; top: 36%; left: var(--esq);
+}
+#animal4
+{
+    position: absolute; top: 53%; left: var(--esq);
+}
+#lugar4
+{
+    position: absolute; top: 70%; left: var(--esq);
+}
+#suco4
+{
+    position: absolute; top: 86%; left: var(--esq);
+}
+.m4
+{
+    text-align: center;
+    font-size: 100%;
+    height: 10%;
+    width: 75%;
+    border-radius: 10px;
+}
+/* Fim do posicionamento do menino 4 */
+
+/* Posicionamento do menino 5 */
+#menino5
+{
+    position: absolute;
+    height: 100%;
+    width: 20%;
+    left: 80%;
+}
+#nome5
+{
+    position: absolute; top: 3%; left: var(--esq);
+}
+#mochila5
+{
+    position: absolute; top: 20%; left: var(--esq);
+}
+#material5
+{
+    position: absolute; top: 36%; left: var(--esq);
+}
+#animal5
+{
+    position: absolute; top: 53%; left: var(--esq);
+}
+#lugar5
+{
+    position: absolute; top: 70%; left: var(--esq);
+}
+#suco5
+{
+    position: absolute; top: 86%; left: var(--esq);
+}
+.m5
+{
+    text-align: center;
+    font-size: 100%;
+    height: 10%;
+    width: 75%;
+    border-radius: 10px;
+}
+
+
+/* Fim do posicionamento do menino 5 */
