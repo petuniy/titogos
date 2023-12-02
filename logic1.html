@@ -378,199 +378,200 @@
     
 
     <script>
-        let n1 = document.getElementById('nome1')
-        let n2 = document.getElementById('nome2')
-        let n3 = document.getElementById('nome3')
-        let n4 = document.getElementById('nome4')
-        let n5 = document.getElementById('nome5')
-
-        let moc1 = document.getElementById('mochila1')
-        let moc2 = document.getElementById('mochila2') 
-        let moc3 = document.getElementById('mochila3') 
-        let moc4 = document.getElementById('mochila4') 
-        let moc5 = document.getElementById('mochila5')
-
-        let mat1 = document.getElementById('material1') 
-        let mat2 = document.getElementById('material2') 
-        let mat3 = document.getElementById('material3') 
-        let mat4 = document.getElementById('material4') 
-        let mat5 = document.getElementById('material5') 
-
-        let ani1 = document.getElementById('animal1')
-        let ani2 = document.getElementById('animal2')
-        let ani3 = document.getElementById('animal3')
-        let ani4 = document.getElementById('animal4')
-        let ani5 = document.getElementById('animal5')
-
-        let lug1 = document.getElementById('lugar1')
-        let lug2 = document.getElementById('lugar2')
-        let lug3 = document.getElementById('lugar3')
-        let lug4 = document.getElementById('lugar4')
-        let lug5 = document.getElementById('lugar5')
-
-        let suc1 = document.getElementById('suco1')
-        let suc2 = document.getElementById('suco2')
-        let suc3 = document.getElementById('suco3')
-        let suc4 = document.getElementById('suco4')
-        let suc5 = document.getElementById('suco5')
-
-
+        let n = [], moc = [], mat = [], ani = [], lug = [], suc = [];
         let btn = document.getElementById('submit')
 
-        let vc1l1 = document.getElementById('cb1l1')
-        let vc1l2 = document.getElementById('cb1l2')
-        let vc1l3 = document.getElementById('cb1l3')
-        let vc1l4 = document.getElementById('cb1l4')
-        let vc1l5 = document.getElementById('cb1l5')
-        let vc1l6 = document.getElementById('cb1l6')
-        let vc1l7 = document.getElementById('cb1l7')
-        let vc1l8 = document.getElementById('cb1l8')
-        let vc1l9 = document.getElementById('cb1l9')
-        let vc1l10 = document.getElementById('cb1l10')
-        let vc1l11 = document.getElementById('cb1l11')
-        let vc1l12 = document.getElementById('cb1l12')
+        let vc1 = []
+        let vc2 = []
 
-        let vc2l1 = document.getElementById('cb2l1')
-        let vc2l2 = document.getElementById('cb2l2')
-        let vc2l3 = document.getElementById('cb2l3')
-        let vc2l4 = document.getElementById('cb2l4')
-        let vc2l5 = document.getElementById('cb2l5')
-        let vc2l6 = document.getElementById('cb2l6')
-        let vc2l7 = document.getElementById('cb2l7')
-        let vc2l8 = document.getElementById('cb2l8')
-        let vc2l9 = document.getElementById('cb2l9')
-        let vc2l10 = document.getElementById('cb2l10')
-        let vc2l11 = document.getElementById('cb2l11')
+
+        for(let i = 1; i<=5; i++)
+        {
+            n[i] = document.getElementById('nome'+i)
+        }
+        for(let i = 1; i<=5; i++)
+        {
+            moc[i] = document.getElementById('mochila'+i)
+        }
+        for(let i = 1; i<=5; i++)
+        {
+            mat[i] = document.getElementById('material'+i)
+        }
+        for(let i = 1; i<=5; i++)
+        {
+            ani[i] = document.getElementById('animal'+i)
+        }
+        for(let i = 1; i<=5; i++)
+        {
+            lug[i] = document.getElementById('lugar'+i)
+        }
+        for(let i = 1; i<=5; i++)
+        {
+            suc[i] = document.getElementById('suco'+i)
+        }
+
+
+
+
+
+
+        
+        for(i = 1; i<= 12; i++)
+        {
+            vc1[i] = document.getElementById('cb1l'+i)
+        }
+        for(i = 1; i <= 11; i++)
+        {
+            vc2[i] = document.getElementById('cb2l'+i)
+        }
 
         function ckbconferir1()
         {
-            if(vc1l1.checked == true)
-                document.getElementById('p1l1').style.textDecoration = "line-through"
-            else
-                document.getElementById('p1l1').style.textDecoration = "initial"
-            if(vc1l2.checked == true)
-                document.getElementById('p1l2').style.textDecoration = "line-through"
-            else
-                document.getElementById('p1l2').style.textDecoration = "initial"
-            if(vc1l3.checked == true)
-                document.getElementById('p1l3').style.textDecoration = "line-through"
-            else
-                document.getElementById('p1l3').style.textDecoration = "initial"
-            if(vc1l4.checked == true)
-                document.getElementById('p1l4').style.textDecoration = "line-through"
-            else
-                document.getElementById('p1l4').style.textDecoration = "initial"
-            if(vc1l5.checked == true)
-                document.getElementById('p1l5').style.textDecoration = "line-through"
-            else
-                document.getElementById('p1l5').style.textDecoration = "initial"
-            if(vc1l6.checked == true)
-                document.getElementById('p1l6').style.textDecoration = "line-through"
-            else
-                document.getElementById('p1l6').style.textDecoration = "initial"
-            if(vc1l7.checked == true)
-                document.getElementById('p1l7').style.textDecoration = "line-through"
-            else
-                document.getElementById('p1l7').style.textDecoration = "initial"
-            if(vc1l8.checked == true)
-                document.getElementById('p1l8').style.textDecoration = "line-through"
-            else
-                document.getElementById('p1l8').style.textDecoration = "initial"
-            if(vc1l9.checked == true)
-                document.getElementById('p1l9').style.textDecoration = "line-through"
-            else
-                document.getElementById('p1l9').style.textDecoration = "initial"
-            if(vc1l10.checked == true)
-                document.getElementById('p1l10').style.textDecoration = "line-through"
-            else
-                document.getElementById('p1l10').style.textDecoration = "initial"
-            if(vc1l11.checked == true)
-                document.getElementById('p1l11').style.textDecoration = "line-through"
-            else
-                document.getElementById('p1l11').style.textDecoration = "initial"
-            if(vc1l12.checked == true)
-                document.getElementById('p1l12').style.textDecoration = "line-through"
-            else
-                document.getElementById('p1l12').style.textDecoration = "initial"
+
+            for(let o = 1; o <= vc1.length; o++)
+            {
+                if(vc1[o].checked == true)
+                    document.getElementById('p1l'+o).style.textDecoration = "line-through"
+                else
+                    document.getElementById('p1l'+o).style.textDecoration = "initial"
+            }
         }
         
         function ckbconferir2()
         {
-            if(vc2l1.checked == true)
-                document.getElementById('p2l1').style.textDecoration = "line-through"
-            else
-                document.getElementById('p2l1').style.textDecoration = "initial"
-            
-            if(vc2l2.checked == true)
-                document.getElementById('p2l2').style.textDecoration = "line-through"
-            else
-                document.getElementById('p2l2').style.textDecoration = "initial"
-
-            if(vc2l3.checked == true)
-                document.getElementById('p2l3').style.textDecoration = "line-through"
-            else
-                document.getElementById('p2l3').style.textDecoration = "initial"
-
-            if(vc2l4.checked == true)
-                document.getElementById('p2l4').style.textDecoration = "line-through"
-            else
-                document.getElementById('p2l4').style.textDecoration = "initial"
-
-            if(vc2l5.checked == true)
-                document.getElementById('p2l5').style.textDecoration = "line-through"
-            else
-                document.getElementById('p2l5').style.textDecoration = "initial"
-
-            if(vc2l6.checked == true)
-                document.getElementById('p2l6').style.textDecoration = "line-through"
-            else
-                document.getElementById('p2l6').style.textDecoration = "initial"
-
-            if(vc2l7.checked == true)
-                document.getElementById('p2l7').style.textDecoration = "line-through"
-            else
-                document.getElementById('p2l7').style.textDecoration = "initial"
-
-            if(vc2l8.checked == true)
-                document.getElementById('p2l8').style.textDecoration = "line-through"
-            else
-                document.getElementById('p2l8').style.textDecoration = "initial"
-
-            if(vc2l9.checked == true)
-                document.getElementById('p2l9').style.textDecoration = "line-through"
-            else
-                document.getElementById('p2l9').style.textDecoration = "initial"
-
-            if(vc2l10.checked == true)
-                document.getElementById('p2l10').style.textDecoration = "line-through"
-            else
-                document.getElementById('p2l10').style.textDecoration = "initial"
-
-            if(vc2l11.checked == true)
-                document.getElementById('p2l11').style.textDecoration = "line-through"
-            else
-                document.getElementById('p2l11').style.textDecoration = "initial"
+            for(let o = 1; o <= vc1.length; o++)
+            {
+                if(vc2[o].checked == true)
+                    document.getElementById('p2l'+o).style.textDecoration = "line-through"
+                else
+                    document.getElementById('p2l'+o).style.textDecoration = "initial"
+            }
         }
 
+        for(i = 1; i<= moc.length; i++)
+        {
+            moc[i].onclick = (event) =>
+            {
+                cm()
+            }
+        }
+
+
         
         
-        btn.onclick = (event) => {
+        function cm()
+        {
+            for(let o = 1; o <= 5; o++)
+            {
+                if(moc[o].value == 'vermelha')
+                {
+                    document.getElementById('menino'+o).style.backgroundColor = 'red'
+                }
+                if(moc[o].value == 'azul')
+                {
+                    document.getElementById('menino'+o).style.backgroundColor = 'blue'
+                }
+                if(moc[o].value == 'verde')
+                {
+                    document.getElementById('menino'+o).style.backgroundColor = '#00A36C'
+                }
+                if(moc[o].value == 'branca')
+                {
+                    document.getElementById('menino'+o).style.backgroundColor = 'white'
+                }
+                if(moc[o].value == 'amarela')
+                {
+                    document.getElementById('menino'+o).style.backgroundColor = 'yellow'
+                }
+                if(moc[o].value == 'null')
+                {
+                    document.getElementById('menino'+o).style.backgroundColor = 'initial'
+                }
+            }
+        }
+
+        btn.onclick = (event) => 
+        {
 
             conferir()
         }
 
         function conferir()
         {
-            let certo
-            if(n1.value == 'gustavo' && n2.value == 'pedro' && n3.value == 'carlos' && n4.value == 'andre' && n5.value == 'felipe' && moc1.value == 'amarela' && moc2.value == 'branca' && moc3.value == 'vermelha' && moc4.value == 'azul' && moc5.value == 'verde' && mat1.value == 'artes' && mat2.value == 'portugues' && mat3.value == 'matematica' && mat4.value == 'biologia' && mat5.value == 'historia'&& ani1.value == 'passaro' && ani2.value == 'cavalo' && ani3.value == 'gato' && ani4.value == 'hamster' && ani5.value == 'cachorro' && lug1.value == 'recife' && lug2.value == 'salvador' && lug3.value == 'manaus' && lug4.value == 'rj' && lug5.value == 'flora' && suc1.value == 'abacaxi' && suc2.value == 'limao' && suc3.value == 'maracuja' && suc4.value == 'morango' && suc5.value == 'laranja')
+            if(cgarotos() && cmochila() && cmateria() && canimal() && clugar() && csuco())
             {
                 alert("Certo\nParabéns!!!!")
-                window.location = "https://plz.life/OCN74Z"
             }
             else
             {
                 alert("Errado") 
             }
+        }
+
+        function cgarotos()
+        {
+            let vf = false
+            if(n[1].value == 'gustavo' && n[2].value == 'pedro' && n[3].value == 'carlos' && n[4].value == 'andre' && n[5].value == 'felipe')
+            {
+                vf = true
+            }
+
+            return vf
+        }
+
+        function cmochila()
+        {
+            let vf = false
+            if(moc[1].value == 'amarela' && moc[2].value == 'branca' && moc[3].value == 'vermelha' && moc[4].value == 'azul' && moc[5].value == 'verde')
+            {
+                vf = true
+            }
+
+            return vf
+        }
+
+        function cmateria()
+        {
+            let vf = false
+            if(mat[1].value == 'artes' && mat[2].value == 'portugues' && mat[3].value == 'matematica' && mat[4].value == 'biologia' && mat[5].value == 'historia')
+            {
+                vf = true
+            }
+
+            return vf
+        }
+
+        function canimal()
+        {
+            let vf = false
+            if(ani[1].value == 'passaro' && ani[2].value == 'cavalo' && ani[3].value == 'gato' && ani[4].value == 'hamster' && ani[5].value == 'cachorro')
+            {
+                vf = true
+            }
+
+            return vf
+        }
+        
+        function clugar()
+        {
+            let vf = false
+            if(lug[1].value == 'recife' && lug[2].value == 'salvador' && lug[3].value == 'manaus' && lug[4].value == 'rj' && lug[5].value == 'flora')
+            {
+                vf = true
+            }
+
+            return vf
+        }
+
+        function csuco()
+        {
+            let vf = false
+            if(lsuc[1].value == 'abacaxi' && suc[2].value == 'limao' && suc[3].value == 'maracuja' && suc[4].value == 'morango' && suc[5].value == 'laranja')
+            {
+                vf = true
+            }
+
+            return vf
         }
 
         function menu()
